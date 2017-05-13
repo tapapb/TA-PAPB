@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglogo"
+    tools:context="com.studio.vokasi.tudhkar.Splashscreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="268dp"
+            android:layout_height="372dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"
+            android:id="@+id/logosplascren" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Belajar dan Mengingat"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dimana Saja Kapan Saja"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="23dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtrere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="Loading..."
+        android:textSize="20dp"
+        android:textColor="@color/colorBlack" />
+
+    <ProgressBar
+        android:id="@+id/ProgressBar01"
+        android:layout_width="250dp"
+        android:max="100"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtrere"
+        android:layout_centerInParent="true"
+        android:progressDrawable="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dip" />
+</RelativeLayout>

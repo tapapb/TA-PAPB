@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/contentFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:background="@drawable/button_normal_dark"
+                    android:scaleType="centerInside"
+                    android:padding="10dp"
+                    android:src="@drawable/sehari"
+                    android:layout_width="130dp"
+                    android:layout_height="150dp"
+                    android:onClick="ibSehari"/>
+                <ImageButton
+                    android:background="@drawable/button_normal_dark"
+                    android:scaleType="centerInside"
+                    android:padding="10dp"
+                    android:src="@drawable/solat"
+                    android:layout_width="130dp"
+                    android:layout_height="150dp"
+                    android:onClick="ibSholat"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:background="@drawable/button_normal_dark"
+                    android:scaleType="centerInside"
+                    android:padding="10dp"
+                    android:src="@drawable/dzikir"
+                    android:layout_width="130dp"
+                    android:layout_height="150dp"
+                    android:onClick="ibDzikir"/>
+                <ImageButton
+                    android:background="@drawable/button_normal_dark"
+                    android:scaleType="centerInside"
+                    android:padding="10dp"
+                    android:src="@drawable/surah"
+                    android:layout_width="130dp"
+                    android:layout_height="150dp"
+                    android:onClick="ibSurat"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
